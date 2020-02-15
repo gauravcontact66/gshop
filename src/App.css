@@ -1,3 +1,7 @@
+:root{
+  --mainblue:#2B3E96;
+  --lightblue: #0084ff;  
+}
 .App {
   text-align: center;
 }
@@ -27,7 +31,6 @@
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +38,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+.banner-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+}
+
+/*Added styles*/
+.nav-item > .nav-link{
+  color: #fff;
+}
+.nav-item.active>.nav-link{
+  color: var(--lightblue);
+}
+.bg-darkblue{
+  background-color: var(--mainblue) !important;
+}
+button.btn-outline-custom {
+  color: var(--lightblue);
+  border-color: var(--lightblue);
+  transition-duration: 0.5s;
+}
+button.btn-outline-custom:hover {
+  color: white;
+  border-color: white;
 }
